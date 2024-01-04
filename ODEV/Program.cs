@@ -7,17 +7,12 @@ namespace ODEV
             Console.WriteLine("Welcome to find the number");
             Console.WriteLine("////////////////////////");
             Console.WriteLine("Select the difficulty level");
-
             Console.WriteLine("1-Easy");
             Console.WriteLine("2-Medium");
             Console.WriteLine("3-Hard");
-
             int right = 3;
             int point = 100;
-
-
             int level = Convert.ToInt32(Console.ReadLine());
-
             if (level == 1)
             {
                 Console.WriteLine("You need to guess 1 numbers. And you have 3 rights. (In 1-4)");
@@ -26,10 +21,8 @@ namespace ODEV
                 int unumber;
                 for (int i = 0; i < right; i--)
                 {
-
                     Console.WriteLine("Guess the number:");
                     unumber = int.Parse(Console.ReadLine());
-
                     if (unumber == number)
                     {
                         Console.WriteLine("You WON!");
@@ -52,8 +45,6 @@ namespace ODEV
                         }
                     }
                 }
-
-
             }
 
             else if (level == 2)
@@ -64,7 +55,6 @@ namespace ODEV
                 int unumber;
                 for (int i = 0; i < right; i--)
                 {
-
                     Console.WriteLine("Guess the number:");
                     unumber = int.Parse(Console.ReadLine());
 
@@ -99,7 +89,6 @@ namespace ODEV
                 int unumber;
                 for (int i = 0; i < right; i--)
                 {
-
                     Console.WriteLine("Guess the number:");
                     unumber = int.Parse(Console.ReadLine());
 
@@ -127,17 +116,10 @@ namespace ODEV
                     }
                 }
             }
-
             else
             {
                 Console.WriteLine("Enter Valid Number");
             }
-
-
-
-
-
-
         }
     }
 }
